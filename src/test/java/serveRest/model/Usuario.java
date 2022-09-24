@@ -3,7 +3,7 @@ package serveRest.model;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomUtils;
 
 @Builder
 @Getter
@@ -11,7 +11,7 @@ import org.apache.commons.lang.math.RandomUtils;
 public class Usuario {
 
     @Builder.Default
-    private String nome = "automacao"+RandomUtils.nextInt();
+    private String nome = "automacao"+ RandomUtils.nextInt();
 
     @Builder.Default
     private String email = "automacao-serverest-api"+RandomUtils.nextInt()+"@hotmail.com";
